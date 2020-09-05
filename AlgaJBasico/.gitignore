@@ -1,0 +1,46 @@
+# .gitignore 
+
+# Eclipse folders and configurations
+.metadata/
+.settings/
+bin/
+tmp/
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+# Compliled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+## Visual Studio Code
+.vscode/
+
+# Intellij .gitignore
+*.idea
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
+.idea/**/workspace.xml
+.idea/**/tasks.xml
