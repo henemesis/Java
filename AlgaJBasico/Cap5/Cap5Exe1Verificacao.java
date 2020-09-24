@@ -41,6 +41,7 @@ public class Cap5Exe1Verificacao {
         } else if (total <= 150 || notaMatematica <= 60 || notaPortugues <= 60){
             System.out.println("Você não foi classificado! " + notaInferior);
         }
+        scanner.close();
     }
 
 }
