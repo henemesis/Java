@@ -9,13 +9,14 @@ public class IteracaoFor {
      for (int i = 0; i < 5; i++ ) {
          System.out.println("veja");
      }
+
+        // checando a posição do array a cada volta do foreach!
         int [] i = new int[5];
         int posicao = 0;
         for (int veja:
                 i) {
             System.out.println(i[veja] = posicao++);
         }
-        // checando a posição do array a cada volta do foreach!
 
         Integer [] produtos = new Integer[]{100, 225, 300};
 
