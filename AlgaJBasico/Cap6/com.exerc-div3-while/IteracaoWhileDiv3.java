@@ -14,15 +14,16 @@ public class IteracaoWhileDiv3 {
         Integer [] armazena = new Integer[21];
         Integer [] resultado = new Integer[21];
 
+        System.out.print("Aqueles que são divisíveis por 3: [");
         while (i < numeros.length) {
             numero = numeros[i];
             divisivelPor3 = numero % 3;
 
             if (divisivelPor3.equals(0)) {
-                System.out.println(numero);
+                System.out.print(" " + numero);
             }
             i++;
         }
-
+        System.out.print(" ]");
     }
 }
