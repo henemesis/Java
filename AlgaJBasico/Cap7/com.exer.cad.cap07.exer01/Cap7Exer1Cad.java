@@ -10,7 +10,7 @@ public class Cap7Exer1Cad {
 		String[] atividade = new String[5];
 
 		for (int i = 0; i < atividade.length; i++) {
-			System.out.println("Por favor digite a " + (i + 1) + " primeira atividade a ser realizada: ");
+			System.out.print("Por favor digite a " + (i + 1) + " primeira atividade a ser realizada: ");
 			atividade[i] = scanner.next();
 			System.out.println();
 
