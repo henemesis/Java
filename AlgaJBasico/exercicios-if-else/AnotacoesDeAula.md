@@ -20,3 +20,7 @@ somar os dois, caso contrário multiplique A por B. Ao final de qualquer um dos 
 atribuir o resultado para uma variável C e mostrar seu conteúdo na tela.  
 Resp: IgualDiferente.java  
   
+5) Encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo,
+imprimindo o resultado.  
+Resp: 
+  
