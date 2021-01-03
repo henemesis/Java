@@ -22,5 +22,13 @@ Resp: IgualDiferente.java
   
 5) Encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo,
 imprimindo o resultado.  
-Resp: 
+Resp: DobroOuTriplo.java  
+  
+6) Escreva um algoritmo que lê dois valores booleanos (lógicos) e então determina se ambos são
+VERDADEIROS ou FALSOS.  
+Resp: VerdadeiroOuFalso.java  
+  
+7) Faça um algoritmo que leia uma variável e some 5 caso seja par ou some 8 caso seja ímpar,
+imprimir o resultado desta operação.  
+Resp: SeParOuImpar
   
