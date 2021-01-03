@@ -51,3 +51,4 @@ com a tabela abaixo.
     -> Entre 18,5 e 25 Peso normal  
     -> Entre 25 e 30 Acima do peso  
     -> Acima de 30 obeso  
+Resp: IMC.java
