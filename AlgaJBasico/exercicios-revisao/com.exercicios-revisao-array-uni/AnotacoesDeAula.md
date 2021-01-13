@@ -15,3 +15,6 @@ c) 1 2 3 4 5 10 20 30 40 50
 
 d) 3 4 7 12 19 28 39 52 67 84  
   
+2) Escreva um trecho Java que exiba os valores de um array a double numa mesma
+linha.  
+  
