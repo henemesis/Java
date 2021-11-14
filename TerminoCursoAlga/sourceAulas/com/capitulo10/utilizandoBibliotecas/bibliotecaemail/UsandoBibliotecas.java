@@ -9,9 +9,8 @@ public class UsandoBibliotecas {
 
     public static void main(String[] args) throws EmailException {
         Email email = new SimpleEmail();
-        email.setHostName("smtp.googlemail.com");
-//        email.setSmtpPort(25);
-        email.setSslSmtpPort("465");
+        email.setHostName("smtp.gmail.com");
+        email.setSmtpPort(587);
         email.setAuthenticator(new DefaultAuthenticator("henemesis", "silencedpain"));
         email.setSSLOnConnect(true);
         email.setFrom("henemesis@gmail.com");
@@ -19,6 +18,5 @@ public class UsandoBibliotecas {
         email.setMsg("This is a test mail ... :-)");
         email.addTo("henemesis@gmail.com");
         email.send();
-        System.out.println("Foi enviado");
     }
 }
