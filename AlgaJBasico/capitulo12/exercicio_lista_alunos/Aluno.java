@@ -1,4 +1,4 @@
-package com.capitulo12.exercicio_lista_alunos;
+package exercicio_lista_alunos;
 
 public class Aluno {
 

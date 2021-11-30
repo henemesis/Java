@@ -1,4 +1,4 @@
-package com.capitulo12.src;
+package src;
 
 public class AlgoritmoAvancado {
 

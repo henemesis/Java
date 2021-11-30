@@ -1,4 +1,4 @@
-package com.capitulo12.exercicio_lista_alunos;
+package exercicio_lista_alunos;
 
 public class ObterLista {
     public static void obterListaAluno (ListaAlunos listaAlunos) {
