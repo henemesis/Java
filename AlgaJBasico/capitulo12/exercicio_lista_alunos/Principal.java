@@ -12,6 +12,13 @@ public class Principal {
 
         System.out.println("Remoção");
         ObterLista.obterListaAluno(cadastraAlunos.retirar(cadastraAlunos.cadastrarAlunos(), 3));
+        System.out.println("====================================================");
 
+        System.out.println("Remoção");
+        ObterLista.obterListaAluno(cadastraAlunos.retirar(cadastraAlunos.cadastrarAlunos(), 0));
+
+        System.out.println("====================================================");
+        System.out.println("Ordenamento");
+        ObterLista.obterListaAluno(cadastraAlunos.organizaAluno(cadastraAlunos.cadastrarAlunos()));
     }
 }

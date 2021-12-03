@@ -27,11 +27,18 @@ public class CadastraAlunos {
 
         return listaDeAlunos;
     }
-    
+
     public ListaAlunos retirar(ListaAlunos listaAlunos, int indiceObter) {
         Aluno alunoRemovido = listaAlunos.obter(indiceObter);
         listaAlunos.remover(alunoRemovido);
         cadastrarAlunos();
+        return listaAlunos;
+    }
+
+    public ListaAlunos organizaAluno(ListaAlunos listaAlunos) {
+//        ListaAlunos listaDeAlunos = new ListaAlunos();
+        cadastrarAlunos();
+        listaAlunos.ordernar();
         return listaAlunos;
     }
 }

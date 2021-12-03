@@ -1,4 +1,4 @@
-package com.capitulo10.leituraDeEmail;
+package leituraDeEmail;
 
 import org.apache.commons.mail.EmailException;
 

@@ -1,4 +1,4 @@
-package com.capitulo10.leituraDeEmail;
+package leituraDeEmail;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
