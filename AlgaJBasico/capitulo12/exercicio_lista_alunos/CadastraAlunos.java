@@ -2,7 +2,7 @@ package exercicio_lista_alunos;
 
 public class CadastraAlunos {
 
-    public ListaAlunos cadastrarAlunos() {
+    public ListaAlunos adicionaAlunos() {
         ListaAlunos listaDeAlunos = new ListaAlunos();
 
         Aluno aluno1 = new Aluno();
@@ -31,14 +31,14 @@ public class CadastraAlunos {
     public ListaAlunos retirar(ListaAlunos listaAlunos, int indiceObter) {
         Aluno alunoRemovido = listaAlunos.obter(indiceObter);
         listaAlunos.remover(alunoRemovido);
-        cadastrarAlunos();
+        adicionaAlunos();
         return listaAlunos;
     }
 
     public ListaAlunos organizaAluno(ListaAlunos listaAlunos) {
 //        ListaAlunos listaDeAlunos = new ListaAlunos();
-        cadastrarAlunos();
-        listaAlunos.ordernar();
+        adicionaAlunos();
+        listaAlunos.ordenar();
         return listaAlunos;
     }
 }
