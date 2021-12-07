@@ -1,9 +1,9 @@
 package exercicio_lista_alunos;
 
 public class CadastraAlunos {
+    public static ListaAlunos listaDeAlunos = new ListaAlunos();
 
     public ListaAlunos adicionaAlunos() {
-        ListaAlunos listaDeAlunos = new ListaAlunos();
 
         Aluno aluno1 = new Aluno();
         aluno1.nome = "Pedro";
