@@ -1,8 +1,7 @@
 package com.algaworks;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -46,5 +45,58 @@ public class ContatosControle {
         contato.setId(id);
         LISTA_CONTATOS.add(contato);
         return "redirect:/contatos";
+    }
+
+    @GetMapping("/contatos/{id}/editar")
+    public ModelAndView editar(@PathVariable String id) {
+        ModelAndView modelAndView = new ModelAndView("formulario");
+
+        Contato contato = procurarContato(id);
+
+        modelAndView.addObject("contato", contato);
+        return modelAndView;
+    }
+
+    @PutMapping("/contatos/{id}")
+    public String atualizar(Contato contato) {
+        Integer indice = procurarIndiceContato(contato.getId());
+
+        Contato oldContato = procurarContato(contato.getId());
+
+        LISTA_CONTATOS.remove(oldContato);
+        LISTA_CONTATOS.add(indice, contato);
+
+        return "redirect:/contatos";
+    }
+
+    @DeleteMapping("/contatos/{id}")
+    public String remover(@PathVariable String id) {
+        Contato contato = procurarContato(id);
+        LISTA_CONTATOS.remove(contato);
+        return "redirect:/contatos";
+    }
+
+    // -------------------------------------- Métodos auxiliares
+
+    private Contato procurarContato(String id) {
+        Integer indice = procurarIndiceContato(id);
+
+        if (indice != null) {
+            Contato contato = LISTA_CONTATOS.get(indice);
+            return contato;
+        }
+
+        return null;
+    }
+
+    private Integer procurarIndiceContato(String id) {
+        for (int i = 0; i < LISTA_CONTATOS.size(); i++) {
+
+            Contato contato = LISTA_CONTATOS.get(i);
+            if (contato.getId().equals(id)) {
+                return i;
+            }
+        }
+        return null;
     }
 }
